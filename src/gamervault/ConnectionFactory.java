@@ -16,5 +16,4 @@ public class ConnectionFactory {
         } catch (Exception e) {
             throw new RuntimeException("Erro ao conectar com o banco de dados: " + e.getMessage(), e);
         }
-    }
-}
+    
