@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerVault - Cadastrar Jogo</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <div id="fundo-cadastro">
+        <div class="layout-cadastro-container">
+            
+            <div class="main-form-area">
+                <div class="logo-container-menor">
+                    <img src="imagens/logo_mini.png" alt="GamerVault Logo" class="logo-menor" onerror="this.style.display='none';">
+                </div>
+
+                <form id="form-cadastro-jogo">
+                    <div class="form-row-full">
+                        <label class="lbl-input">NOME DO JOGO</label>
+                        <input type="text" id="txtNomeJogo" class="input-cyber" autocomplete="off" required>
+                    </div>
+
+                    <div class="form-row-split">
+                        <div class="split-col">
+                            <label class="lbl-input">GÊNERO</label>
+                            <input type="text" id="txtGenero" class="input-cyber" autocomplete="off" required>
+                        </div>
+                        <div class="split-col">
+                            <label class="lbl-input">PLATAFORMA</label>
+                            <input type="text" id="txtPlataforma" class="input-cyber" autocomplete="off" required>
+                        </div>
+                        <div class="split-col">
+                            <label class="lbl-input">HORAS</label>
+                            <input type="number" id="txtHorasJogadas" class="input-cyber" autocomplete="off" min="0" required>
+                        </div>
+                    </div>
+
+                    <div class="action-buttons-container">
+                        <button type="button" id="btnCancelar" class="btn-action" onclick="window.location.href='dashboard.html'">CANCELAR</button>
+                        <button type="reset" id="btnLimpar" class="btn-action">LIMPAR</button>
+                        <button type="submit" id="btnSalvar" class="btn-action">SALVAR</button>
+                    </div>
+                </form>
+
+                <div class="tabela-container space-top">
+                    <table id="tabelaCadastro">
+                        <thead>
+                            <tr>
+                                <th>Nome do Jogo</th>
+                                <th>Gênero</th>
+                                <th>Plataforma</th>
+                                <th>Horas Jogadas</th>
+                            </tr>
+                        </thead>
+                        <tbody id="tabela-cadastro-corpo">
+                            </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="side-menu-area">
+                <button id="btnHome2" class="btn-nav w-100" onclick="window.location.href='dashboard.html'">HOME</button>
+                <button id="btnCadastro2" class="btn-nav w-100 current-page">NOVO CADASTRO</button>
+                <button id="btnSair2" class="btn-nav w-100" onclick="window.location.href='encerramento.html'">SAIR</button>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

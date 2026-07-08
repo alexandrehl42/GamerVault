@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GamerVault - Lista de Jogos</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+    <div id="fundo-lista">
+        <div class="nav-container">
+            <button id="btnHome" class="btn-nav" onclick="window.location.href='dashboard.html'">HOME</button>
+            <button id="btnCadastro" class="btn-nav" onclick="window.location.href='cadastro.html'">NOVO CADASTRO</button>
+            <button id="btnSair" class="btn-nav" onclick="window.location.href='encerramento.html'">SAIR</button>
+        </div>
+
+        <div class="logo-container-menor">
+            <img src="imagens/logo_mini.png" alt="GamerVault Logo" class="logo-menor" onerror="this.style.display='none';">
+        </div>
+
+        <div class="pesquisa-container">
+            <input type="text" id="barraPesquisa" placeholder="pesquisa" autocomplete="off">
+            <button id="btnPesquisar">PESQUISAR</button>
+        </div>
+
+        <h2 class="titulo-sessao">LISTA DE JOGOS</h2>
+
+        <div class="tabela-container">
+            <table id="tabelaJogos">
+                <thead>
+                    <tr>
+                        <th>Nome do Jogo</th>
+                        <th>Gênero</th>
+                        <th>Plataforma</th>
+                        <th>Horas Jogadas</th>
+                    </tr>
+                </thead>
+                <tbody id="tabela-jogos-corpo">
+                    </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
