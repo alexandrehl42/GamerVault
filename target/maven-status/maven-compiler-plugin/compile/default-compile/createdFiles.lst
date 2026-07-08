@@ -1,0 +1,11 @@
+gamervault\view\TelaLogin$2.class
+gamervault\service\JogoService.class
+gamervault\view\TelaListaJogos.class
+gamervault\view\TelaLogin$1.class
+gamervault\view\TelaEncerramento.class
+gamervault\model\Jogo.class
+gamervault\view\TelaCadastroJogos.class
+gamervault\database\ConnectionFactory.class
+gamervault\view\TelaLogin.class
+gamervault\dao\JogoDAO.class
+gamervault\Main.class
