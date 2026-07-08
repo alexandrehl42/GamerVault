@@ -47,7 +47,7 @@ public class JogoService {
 
     }
 
-    private void validarJogo(Jogo jogo) {
+    public void validarJogo(Jogo jogo) {
 
         if (jogo == null) {
             throw new IllegalArgumentException("Jogo inválido.");
@@ -68,3 +68,4 @@ public class JogoService {
     }
 
 }
+
